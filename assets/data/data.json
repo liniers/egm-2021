@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "fuente": "EGM 3ª Ola 2021",
+    "cliente": "Cadena SER",
+    "nota": "Datos en miles de oyentes"
+  },
+  "colors": {
+    "ser": "#f3d800",
+    "cope": "#62768a",
+    "ondacero": "#80bb76",
+    "rne": "#db2a00",
+    "navy": "#192b77",
+    "orange": "#e0693a"
+  },
+  "sections": [
+    {
+      "id": "hablada",
+      "kicker": "La SER, líder de la radio",
+      "title": "Radio Hablada",
+      "hero": true,
+      "bars": [
+        { "cadena": "SER", "programa": "", "valor": 4067000, "color": "ser" },
+        { "cadena": "COPE", "programa": "", "valor": 3411000, "color": "cope" },
+        { "cadena": "ONDA CERO", "programa": "", "valor": 1866000, "color": "ondacero" },
+        { "cadena": "RNE", "programa": "", "valor": 1091000, "color": "rne" }
+      ]
+    },
+    {
+      "id": "mananas",
+      "kicker": "Líderes",
+      "title": "de las mañanas",
+      "protagonista": { "nombre": "Àngels Barceló", "programa": "Hoy por hoy", "valor": 2819000, "img": "angels.png" },
+      "bars": [
+        { "cadena": "SER", "programa": "Hoy por hoy", "valor": 2819000, "color": "ser" },
+        { "cadena": "COPE", "programa": "Herrera en la COPE", "valor": 2639000, "color": "cope" },
+        { "cadena": "ONDA CERO", "programa": "Más de uno", "valor": 1351000, "color": "ondacero" },
+        { "cadena": "RNE", "programa": "Las mañanas de RNE", "valor": 832000, "color": "rne" }
+      ]
+    },
+    {
+      "id": "tardes",
+      "kicker": "Líderes",
+      "title": "de las tardes",
+      "protagonista": { "nombre": "Carles Francino", "programa": "La ventana", "valor": 826000, "img": "carles.png" },
+      "bars": [
+        { "cadena": "SER", "programa": "La ventana", "valor": 826000, "color": "ser" },
+        { "cadena": "ONDA CERO", "programa": "Julia en la onda", "valor": 442000, "color": "ondacero" },
+        { "cadena": "COPE", "programa": "La tarde", "valor": 367000, "color": "cope" },
+        { "cadena": "RNE", "programa": "Tarde lo que tarde", "valor": 152000, "color": "rne" }
+      ]
+    },
+    {
+      "id": "noches",
+      "kicker": "Líderes",
+      "title": "de las noches",
+      "protagonista": { "nombre": "Aimar Bretos", "programa": "Hora 25", "valor": 989000, "img": "aimar.png" },
+      "bars": [
+        { "cadena": "SER", "programa": "Hora 25", "valor": 989000, "color": "ser" },
+        { "cadena": "COPE", "programa": "La linterna", "valor": 929000, "color": "cope" },
+        { "cadena": "ONDA CERO", "programa": "La brújula", "valor": 307000, "color": "ondacero" },
+        { "cadena": "RNE", "programa": "24 horas", "valor": 265000, "color": "rne" }
+      ]
+    },
+    {
+      "id": "finde",
+      "kicker": "Líderes",
+      "title": "del fin de semana",
+      "protagonista": { "nombre": "Javier del Pino", "programa": "A vivir que son dos días", "img": "javier.png" },
+      "grupos": [
+        {
+          "label": "Sábado",
+          "destacado": 1894000,
+          "bars": [
+            { "cadena": "SER", "programa": "A vivir que son dos días", "valor": 1894000, "color": "ser" },
+            { "cadena": "COPE", "programa": "", "valor": 985000, "color": "cope" },
+            { "cadena": "ONDA CERO", "programa": "Por fin no es lunes", "valor": 715000, "color": "ondacero" },
+            { "cadena": "RNE", "programa": "No es un día cualquiera", "valor": 581000, "color": "rne" }
+          ]
+        },
+        {
+          "label": "Domingo",
+          "destacado": 1622000,
+          "bars": [
+            { "cadena": "SER", "programa": "A vivir que son dos días", "valor": 1622000, "color": "ser" },
+            { "cadena": "COPE", "programa": "", "valor": 1068000, "color": "cope" },
+            { "cadena": "ONDA CERO", "programa": "Por fin no es lunes", "valor": 575000, "color": "ondacero" },
+            { "cadena": "RNE", "programa": "No es un día cualquiera", "valor": 548000, "color": "rne" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deportes",
+      "kicker": "Los deportes",
+      "title": "de la SER",
+      "img": "manu y dani.png",
+      "protagonistas": [
+        {
+          "lado": "Líderes",
+          "lado2": "de las noches deportivas",
+          "nombre": "Manu Carreño", "programa": "El Larguero", "valor": 842000
+        },
+        {
+          "lado": "Líderes",
+          "lado2": "promedio de fin de semana",
+          "nombre": "Dani Garrido", "programa": "Carrusel deportivo", "valor": 1400000,
+          "sabado": 1450000, "domingo": 1343000,
+          "nota": "*promedio de sábado y domingo en horario coincidente de 15h a 01:30h"
+        }
+      ]
+    },
+    {
+      "id": "genericos",
+      "kicker": "Y además",
+      "title": "grandes voces de la SER",
+      "cards": [
+        { "nombre": "Mara Torres", "programa": "El Faro", "valor": 230000, "img": "mara.png" },
+        { "nombre": "José Antonio Marcos", "programa": "Hora 14", "valor": 548000, "img": "jose.png" },
+        { "nombre": "Roberto Sánchez", "programa": "Si amanece nos vamos", "valor": 98000, "img": "roberto.png" }
+      ]
+    }
+  ]
+}

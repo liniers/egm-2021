@@ -1,0 +1,51 @@
+/* ============================================================
+   EGM Cadena SER — rebuild exacto sobre lienzo 1080
+   ============================================================ */
+@font-face{font-family:"Bely Display";src:url("../fonts/BelyDisplay.woff2") format("woff2"),url("../fonts/BelyDisplay.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Neutra Text";src:url("../fonts/Neutra-Light.woff") format("woff");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Neutra Text";src:url("../fonts/Neutra-Regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Neutra Text";src:url("../fonts/Neutra-Bold.woff") format("woff");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Neutra Text";src:url("../fonts/Neutra-BoldItalic.woff") format("woff");font-weight:700;font-style:italic;font-display:swap}
+
+:root{
+  --ser:#f3d800; --cope:#62768a; --ondacero:#80bb76; --rne:#db2a00;
+  --navy:#192b77; --cream:#faf2ef; --orange:#e0693a;
+  --bely:"Bely Display",Georgia,serif;
+  --neutra:"Neutra Text","Helvetica Neue",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--cream);color:var(--navy);font-family:var(--neutra);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:none}
+
+/* ---- Lienzo escalado ---- */
+.stage-wrap{position:relative;width:100%;overflow:hidden}
+.stage{position:absolute;top:0;left:0;width:1080px;height:4852px;transform-origin:top left;background:var(--cream)}
+.layer{position:absolute;inset:0;width:1080px;height:4852px}
+.grid{position:absolute;inset:0;width:1080px;height:4852px;overflow:visible}
+.grid line,.grid path{fill:none;stroke:var(--navy);stroke-width:2.1;vector-effect:non-scaling-stroke}
+.grid .thick{stroke-width:10}
+
+/* ---- Elementos posicionados (px = coords de diseño) ---- */
+.el{position:absolute}
+.t{position:absolute;font-family:var(--bely);line-height:.9;color:var(--navy);margin:0;white-space:nowrap}
+.t.neutra{font-family:var(--neutra)}
+.t.italic{font-style:italic}
+.t.light{font-weight:300}
+.t.bold{font-weight:700}
+.dot{color:var(--orange)}
+.em{color:var(--orange);font-style:italic}
+
+/* Bloques rellenos */
+.block{position:absolute}
+.block.navy{background:var(--navy)}
+.block.yellow{background:var(--ser)}
+.block.gray{background:var(--cope)}
+.block.green{background:var(--ondacero)}
+.block.red{background:var(--rne)}
+
+.portrait{position:absolute}
+
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--rne);z-index:100}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
